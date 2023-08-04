@@ -1,6 +1,6 @@
 ## 🌱 Olá! Eu sou a Christina Fernandes 🌱
 
-- 🔭 Atualmente estou trabalhando como Desenvolvedora Android Junior na Empresa Raízen
+- 🔭 Atualmente estou trabalhando como Desenvolvedora Android Junior
 - 🌱 Estou aprendendo Kotlin e Android Studio
 - ⚡ Curiosidade sou uma apaixonada por jogos e tecnologia, meu jogo favorito é League of Legends e minha tecnologia favorita é Android Studio com Kotlin
 - 📌 Seja como o código que você escreve: sempre evolua, nunca deixe de buscar a perfeição e, acima de tudo, impacte positivamente a vida de quem o utiliza.
