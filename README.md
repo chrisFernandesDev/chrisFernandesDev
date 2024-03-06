@@ -23,7 +23,7 @@
   <a href="https://www.linkedin.com/in/christina-fernandes-62703aa1/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
- [![Snake animation](https://github.com/chrisFernandesDev/chrisFernandesDev/blob/output/github-contribution-grid-snake.svg)](https://github.com/Platane/snk)
+ ![snake gif](https://github.com/chrisFernandesDev/chrisFernandesDev/blob/output/github-contribution-grid-snake.svg)
 
   ##
 
