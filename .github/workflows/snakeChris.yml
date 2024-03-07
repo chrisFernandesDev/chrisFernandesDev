@@ -27,8 +27,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config user.name "Nome do Usuário"
-          git config user.email "email@example.com"
+          git config user.name "chrisFernandesDev"
+          git config user.email "fernandes.christ14@gmail.com"
           git add dist/
           git commit -m "Atualizar cobra de contribuições"
           git push origin HEAD:main
