@@ -31,7 +31,7 @@ jobs:
           git config user.email "fernandes.christ14@gmail.com"
           git add dist/
           git commit -m "Atualizar cobra de contribuições"
-          git push origin HEAD:main
+          git push origin HEAD:master
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
