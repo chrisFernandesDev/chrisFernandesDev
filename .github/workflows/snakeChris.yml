@@ -1,13 +1,11 @@
-# Nome da Actions:
 name: Snake Game
 
 on:
   schedule: 
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
-# Regras
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,26 +15,26 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "fernandes.christ14@gmail.com"
           git fetch
-          git checkout master
+          git checkout main  # Ajuste para "main" se o seu branch principal for diferente
 
       - name: Generate Snake
         uses: Platane/snk@master
         id: snake-gif
         with:
           github_user_name: chrisFernandesDev
-          # gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
       - name: Check Changes
         run: |
           if [[ $(git status --porcelain) ]]; then
-            git commit -am "Atualizar cobra de contribuições"
+            git add -A
+            git commit -m "Atualizar cobra de contribuições"
           else
             echo "No changes to commit."
           fi
 
       - name: Push Changes
-        run: git push origin master
+        run: git push origin main  # Ajuste para "main" se o seu branch principal for diferente
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
