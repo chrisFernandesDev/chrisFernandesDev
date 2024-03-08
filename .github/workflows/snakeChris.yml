@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: Set up Git
         run: |
-          git config user.name "${{ secrets.GITHUB_USER_NAME }}"
-          git config user.email "${{ secrets.GITHUB_USER_EMAIL }}"
+          git config user.name "${{ github.actor }}"
+          git config user.email "fernandes.christ14@gmail.com"
           git fetch
           git checkout master
 
@@ -30,10 +30,14 @@ jobs:
       - name: Check Changes
         run: |
           git status
-          git diff --exit-code || git commit -am "Atualizar cobra de contribuições"
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -am "Atualizar cobra de contribuições"
+          fi
 
       - name: Push Changes
-        run: git push origin main
+        run: git push origin master
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
