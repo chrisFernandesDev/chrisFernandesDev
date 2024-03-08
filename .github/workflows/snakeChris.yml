@@ -15,7 +15,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "fernandes.christ14@gmail.com"
           git fetch
-          git checkout main
+          git checkout master
 
       - name: Generate Snake
         uses: Platane/snk@master
@@ -34,7 +34,7 @@ jobs:
           fi
 
       - name: Push Changes
-        run: git push origin main
+        run: git push origin master
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
