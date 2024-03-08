@@ -29,11 +29,10 @@ jobs:
 
       - name: Check Changes
         run: |
-          git status
-          if git diff --quiet; then
-            echo "No changes to commit."
-          else
+          if [[ $(git status --porcelain) ]]; then
             git commit -am "Atualizar cobra de contribuições"
+          else
+            echo "No changes to commit."
           fi
 
       - name: Push Changes
