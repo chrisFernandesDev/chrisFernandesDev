@@ -34,7 +34,7 @@ jobs:
           fi
 
       - name: Push Changes
-        run: git push origin master
+        run: git push origin main
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
