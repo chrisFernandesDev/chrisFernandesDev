@@ -12,25 +12,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Set up Git
+        run: |
+          git config user.name "${{ secrets.GITHUB_USER_NAME }}"
+          git config user.email "${{ secrets.GITHUB_USER_EMAIL }}"
+          git fetch
+          git checkout main
 
       - name: Generate Snake
         uses: Platane/snk@master
         id: snake-gif
         with:
           github_user_name: chrisFernandesDev
+          # gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
       - name: Check Changes
-        run: git status
-
-      - name: Commit and Push Changes
         run: |
-          git config user.name "chrisFernandesDev"
-          git config user.email "fernandes.christ14@gmail.com"
-          git add dist/
-          git commit -m "Atualizar cobra de contribuições"
-          git push origin HEAD:master
+          git status
+          git diff --exit-code || git commit -am "Atualizar cobra de contribuições"
+
+      - name: Push Changes
+        run: git push origin main
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
