@@ -17,7 +17,7 @@ jobs:
           git config user.name "${{ secrets.GITHUB_USER_NAME }}"
           git config user.email "${{ secrets.GITHUB_USER_EMAIL }}"
           git fetch
-          git checkout main
+          git checkout master
 
       - name: Generate Snake
         uses: Platane/snk@master
