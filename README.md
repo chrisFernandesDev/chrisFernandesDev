@@ -1,10 +1,3 @@
-## 🌱 Olá! Eu sou a Christina Fernandes 🌱
-
-- 🔭 Atualmente sou aluna na 42Porto e uma entusiasta em testes.
-- 🌱 Estou aprimorando minhas habilidades em linguagem C.
-- ⚡ Curiosidade sou uma apaixonada por jogos e tecnologia, meu jogo favorito é League of Legends.
-- 📌 Seja como uma API bem projetada: eficiente, escalável e sempre preparada para evoluir. Busque constantemente aprender, refatorar e otimizar, garantindo uma base sólida para o produto final.
-
 ## 🌱 Hello! I am Christina Fernandes 🌱
 - 🔭 I am currently a student at 42Porto and an enthusiast for testing.
 - 🌱 I am improving my skills in the C programming language.
