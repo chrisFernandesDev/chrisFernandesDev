@@ -1,5 +1,5 @@
 ## 🌱 Hello! I am Christina Fernandes 🌱
-- 🔭 I am currently a student at 42Porto and an enthusiast for testing.
+- 🔭 I'm a test enthusiast.
 - 🌱 I am improving my skills in the C programming language.
 - ⚡ Fun fact: I am passionate about games and technology, and my favorite game is League of Legends.
 - 📌 Be like a well-designed API: efficient, scalable, and always ready to evolve. Continuously strive to learn, refactor, and optimize, ensuring a solid foundation for the final product.
